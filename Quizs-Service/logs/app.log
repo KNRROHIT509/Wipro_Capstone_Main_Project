@@ -1,0 +1,411 @@
+2025-08-11T11:52:29.046+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Starting QuizsServiceApplication using Java 21.0.7 with PID 15996 (C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service)
+2025-08-11T11:52:29.056+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T11:52:29.141+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-11T11:52:29.142+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Quizs-Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-11T11:52:29.146+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T11:52:29.147+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T11:52:31.814+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-11T11:52:32.134+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 300 ms. Found 1 JPA repository interface.
+2025-08-11T11:52:32.546+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5683a19f-8e8b-3944-9ac6-9b20f8377337
+2025-08-11T11:52:33.558+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-11T11:52:33.588+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T11:52:33.589+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T11:52:33.710+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T11:52:33.711+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4563 ms
+2025-08-11T11:52:34.417+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-11T11:52:34.523+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-11T11:52:34.594+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-11T11:52:35.184+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-11T11:52:35.252+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-11T11:52:35.927+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56d08a41
+2025-08-11T11:52:35.932+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-11T11:52:36.075+05:30  WARN 15996 --- [Quizs-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-11T11:52:36.110+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-11T11:52:37.916+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-11T11:52:38.086+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T11:52:38.610+05:30  WARN 15996 --- [Quizs-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-11T11:52:38.700+05:30  WARN 15996 --- [Quizs-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-11T11:52:38.813+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Questions-Service' URL not provided. Will try picking an instance via load-balancing.
+2025-08-11T11:52:40.171+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-11T11:52:40.217+05:30  WARN 15996 --- [Quizs-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-11T11:52:40.258+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-11T11:52:40.439+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-11T11:52:40.483+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-11T11:52:40.491+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T11:52:40.508+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-11T11:52:40.509+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-11T11:52:40.991+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-11T11:52:40.995+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-11T11:52:40.999+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-11T11:52:41.004+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754893361004 with initial instances count: 2
+2025-08-11T11:52:41.013+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZS-SERVICE with eureka with status UP
+2025-08-11T11:52:41.014+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754893361014, current=UP, previous=STARTING]
+2025-08-11T11:52:41.016+05:30  WARN 15996 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-11T11:52:41.035+05:30  INFO 15996 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T11:52:41.058+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-11T11:52:41.061+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-11T11:52:41.100+05:30  INFO 15996 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Started QuizsServiceApplication in 14.566 seconds (process running for 16.339)
+2025-08-11T11:52:41.116+05:30  INFO 15996 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T11:52:41.720+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T11:52:41.720+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T11:52:41.723+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-11T11:55:34.228+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T11:55:34.230+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZS-SERVICE with eureka with status DOWN
+2025-08-11T11:55:34.231+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754893534231, current=DOWN, previous=UP]
+2025-08-11T11:55:34.236+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T11:55:34.239+05:30  INFO 15996 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754893534239, current=UP, previous=DOWN]
+2025-08-11T11:55:34.239+05:30  INFO 15996 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T11:55:34.250+05:30  INFO 15996 --- [Quizs-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T11:55:34.254+05:30  INFO 15996 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T11:55:34.267+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T11:55:34.275+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-11T11:55:34.287+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-11T11:55:34.291+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-11T11:55:37.293+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-11T11:55:37.334+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - deregister  status: 200
+2025-08-11T11:55:37.334+05:30  INFO 15996 --- [Quizs-Service] [RMI TCP Connection(7)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-11T12:00:45.231+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Starting QuizsServiceApplication using Java 21.0.7 with PID 19796 (C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service)
+2025-08-11T12:00:45.237+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T12:00:45.331+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-11T12:00:45.332+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Quizs-Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-11T12:00:45.337+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T12:00:45.337+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T12:00:47.518+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-11T12:00:47.850+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 309 ms. Found 1 JPA repository interface.
+2025-08-11T12:00:48.278+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5683a19f-8e8b-3944-9ac6-9b20f8377337
+2025-08-11T12:00:49.289+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-11T12:00:49.317+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T12:00:49.317+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T12:00:49.435+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T12:00:49.436+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4097 ms
+2025-08-11T12:00:50.176+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-11T12:00:50.303+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-11T12:00:50.386+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-11T12:00:51.027+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-11T12:00:51.087+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-11T12:00:51.786+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@798bd30
+2025-08-11T12:00:51.789+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-11T12:00:51.916+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-11T12:00:51.953+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-11T12:00:53.794+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-11T12:00:53.953+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T12:00:54.449+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-11T12:00:54.533+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-11T12:00:54.626+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Questions-Service' URL not provided. Will try picking an instance via load-balancing.
+2025-08-11T12:00:55.913+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-11T12:00:55.963+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-11T12:00:56.023+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-11T12:00:56.197+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-11T12:00:56.249+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-11T12:00:56.255+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:00:56.276+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-11T12:00:56.277+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-11T12:00:56.783+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-11T12:00:56.787+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-11T12:00:56.792+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-11T12:00:56.795+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754893856795 with initial instances count: 2
+2025-08-11T12:00:56.804+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZS-SERVICE with eureka with status UP
+2025-08-11T12:00:56.806+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754893856806, current=UP, previous=STARTING]
+2025-08-11T12:00:56.807+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-11T12:00:56.820+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T12:00:56.846+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-11T12:00:56.848+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-11T12:00:56.887+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Started QuizsServiceApplication in 14.161 seconds (process running for 15.894)
+2025-08-11T12:00:56.900+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T12:00:57.347+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T12:00:57.348+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T12:00:57.352+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-11T12:05:56.281+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:06:40.042+05:30  INFO 19796 --- [Quizs-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-11T12:06:40.048+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZS-SERVICE with eureka with status DOWN
+2025-08-11T12:06:40.048+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754894200048, current=DOWN, previous=UP]
+2025-08-11T12:06:40.055+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T12:06:40.056+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754894200056, current=UP, previous=DOWN]
+2025-08-11T12:06:40.056+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T12:06:40.071+05:30  INFO 19796 --- [Quizs-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T12:06:40.081+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T12:06:40.094+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T12:06:40.101+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-11T12:06:40.118+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-11T12:06:40.119+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-11T12:06:43.122+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-11T12:06:43.186+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - deregister  status: 200
+2025-08-11T12:06:43.187+05:30  INFO 19796 --- [Quizs-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-11T12:06:44.294+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Starting QuizsServiceApplication using Java 21.0.7 with PID 19796 (C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service)
+2025-08-11T12:06:44.295+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T12:06:44.300+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-11T12:06:44.300+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Quizs-Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-11T12:06:45.288+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-11T12:06:45.313+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interface.
+2025-08-11T12:06:45.499+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5683a19f-8e8b-3944-9ac6-9b20f8377337
+2025-08-11T12:06:45.719+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-11T12:06:45.723+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T12:06:45.723+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T12:06:45.827+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T12:06:45.827+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1527 ms
+2025-08-11T12:06:46.014+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-11T12:06:46.020+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-11T12:06:46.048+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-11T12:06:46.050+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-11T12:06:46.105+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3625dc2
+2025-08-11T12:06:46.106+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-11T12:06:46.111+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-11T12:06:46.112+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-11T12:06:46.203+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-11T12:06:46.261+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T12:06:46.408+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-11T12:06:46.437+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-11T12:06:46.467+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Questions-Service' URL not provided. Will try picking an instance via load-balancing.
+2025-08-11T12:06:46.932+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-11T12:06:46.950+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-11T12:06:46.959+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-11T12:06:47.020+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-11T12:06:47.025+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-11T12:06:47.025+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-11T12:06:47.026+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-11T12:06:47.121+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-11T12:06:47.123+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-11T12:06:47.124+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-11T12:06:47.124+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754894207124 with initial instances count: 3
+2025-08-11T12:06:47.128+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZS-SERVICE with eureka with status UP
+2025-08-11T12:06:47.129+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754894207129, current=UP, previous=STARTING]
+2025-08-11T12:06:47.129+05:30  WARN 19796 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-11T12:06:47.130+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T12:06:47.136+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-11T12:06:47.137+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-11T12:06:47.156+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T12:06:47.161+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Started QuizsServiceApplication in 3.844 seconds (process running for 366.167)
+2025-08-11T12:06:47.164+05:30  INFO 19796 --- [Quizs-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-11T12:11:47.067+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:16:47.099+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:21:47.135+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:26:47.137+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:31:04.031+05:30  INFO 19796 --- [Quizs-Service] [http-nio-8085-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T12:31:04.049+05:30  INFO 19796 --- [Quizs-Service] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T12:31:04.146+05:30  INFO 19796 --- [Quizs-Service] [http-nio-8085-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 94 ms
+2025-08-11T12:31:47.146+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:36:47.148+05:30  INFO 19796 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T12:40:42.474+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T12:40:42.512+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZS-SERVICE with eureka with status DOWN
+2025-08-11T12:40:42.514+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754896242514, current=DOWN, previous=UP]
+2025-08-11T12:40:42.522+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754896242522, current=UP, previous=DOWN]
+2025-08-11T12:40:42.522+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T12:40:42.546+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T12:40:42.582+05:30  INFO 19796 --- [Quizs-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-11T12:40:42.631+05:30  INFO 19796 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T12:40:42.655+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T12:40:42.701+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-11T12:40:42.710+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-11T12:40:42.716+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-11T12:40:45.724+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-11T12:40:45.735+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - deregister  status: 200
+2025-08-11T12:40:45.737+05:30  INFO 19796 --- [Quizs-Service] [RMI TCP Connection(55)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-11T17:21:52.642+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Starting QuizsServiceApplication using Java 21.0.7 with PID 17328 (C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Training\Microservices\Quizs-Service)
+2025-08-11T17:21:52.646+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-08-11T17:21:52.716+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-11T17:21:52.717+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Quizs-Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-11T17:21:52.720+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-11T17:21:52.721+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-11T17:21:54.604+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-11T17:21:54.822+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 202 ms. Found 1 JPA repository interface.
+2025-08-11T17:21:55.339+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=f064a7e8-bec4-30f0-a615-08f7350c675c
+2025-08-11T17:21:56.728+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-11T17:21:56.751+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-11T17:21:56.751+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-11T17:21:56.841+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-11T17:21:56.841+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4119 ms
+2025-08-11T17:21:57.676+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-11T17:21:57.800+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-11T17:21:57.875+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-11T17:21:58.436+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-11T17:21:58.496+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-11T17:21:59.120+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50e50d99
+2025-08-11T17:21:59.123+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-11T17:21:59.256+05:30  WARN 17328 --- [Quizs-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-11T17:21:59.294+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-11T17:22:00.873+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-11T17:22:01.092+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T17:22:01.750+05:30  WARN 17328 --- [Quizs-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-11T17:22:01.979+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-11T17:22:02.096+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'Questions-Service' URL not provided. Will try picking an instance via load-balancing.
+2025-08-11T17:22:05.258+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-11T17:22:05.389+05:30  WARN 17328 --- [Quizs-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-11T17:22:05.442+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-08-11T17:22:05.716+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-11T17:22:05.773+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-11T17:22:05.779+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-11T17:22:05.796+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-11T17:22:06.199+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-11T17:22:06.202+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-11T17:22:06.205+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-11T17:22:06.207+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1754913126207 with initial instances count: 2
+2025-08-11T17:22:06.231+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application QUIZS-SERVICE with eureka with status UP
+2025-08-11T17:22:06.231+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754913126231, current=UP, previous=STARTING]
+2025-08-11T17:22:06.232+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T17:22:06.232+05:30  WARN 17328 --- [Quizs-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-11T17:22:06.268+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-11T17:22:06.271+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-11T17:22:06.303+05:30  INFO 17328 --- [Quizs-Service] [restartedMain] c.w.knr.quizApp.QuizsServiceApplication  : Started QuizsServiceApplication in 15.635 seconds (process running for 20.926)
+2025-08-11T17:22:06.303+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T17:22:06.749+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-11T17:22:06.750+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-11T17:22:06.754+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-08-11T17:27:05.800+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T17:32:05.802+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T17:37:05.805+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T17:42:05.808+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T18:49:37.131+05:30  WARN 17328 --- [Quizs-Service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h5m37s877ms256µs900ns).
+2025-08-11T18:52:13.681+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T18:57:13.706+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:02:13.715+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:07:13.741+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:12:13.745+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:17:13.764+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:22:13.768+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:27:13.783+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:32:13.791+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:37:13.807+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:42:13.816+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:47:13.820+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:52:13.822+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T19:57:13.832+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:02:13.846+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:07:13.859+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:12:13.865+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:17:13.868+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:22:13.870+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:27:13.873+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:32:13.911+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:37:13.913+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:42:13.920+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T20:47:13.955+05:30  INFO 17328 --- [Quizs-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-11T21:17:51.454+05:30  WARN 17328 --- [Quizs-Service] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m12s591ms6µs100ns).
+2025-08-11T21:18:20.340+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.351+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(152)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.406+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application QUIZS-SERVICE with eureka with status DOWN
+2025-08-11T21:18:20.406+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(155)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.407+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754927300407, current=DOWN, previous=UP]
+2025-08-11T21:18:20.412+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1754927300412, current=UP, previous=DOWN]
+2025-08-11T21:18:20.413+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085: registering service...
+2025-08-11T21:18:20.518+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-11T21:18:20.565+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(156)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.567+05:30  INFO 17328 --- [Quizs-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_QUIZS-SERVICE/KNRROHIT:Quizs-Service:8085 - registration status: 204
+2025-08-11T21:18:20.572+05:30  INFO 17328 --- [Quizs-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown aborted with one or more requests still active
+2025-08-11T21:18:20.654+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(157)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.585+05:30  WARN 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] org.apache.tomcat.util.net.Acceptor      : Interrupt was received while waiting for the acceptor thread [http-nio-8085-Acceptor] to stop
+
+java.lang.InterruptedException: null
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133) ~[na:na]
+	at java.base/java.util.concurrent.CountDownLatch.await(CountDownLatch.java:276) ~[na:na]
+	at org.apache.tomcat.util.net.Acceptor.stopMillis(Acceptor.java:184) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.NioEndpoint.stopInternal(NioEndpoint.java:328) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:1522) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:721) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.connector.Connector.stopInternal(Connector.java:1123) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.apache.catalina.core.StandardService.removeConnector(StandardService.java:299) ~[tomcat-embed-core-10.1.43.jar:10.1.43]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.lambda$removeServiceConnectors$1(TomcatWebServer.java:173) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.doWithConnectors(TomcatWebServer.java:192) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.removeServiceConnectors(TomcatWebServer.java:170) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:358) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:120) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:463) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:618) ~[spring-context-6.2.9.jar:6.2.9]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:432) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:323) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1172) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:179) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.9.jar:6.2.9]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:97) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:115) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:52) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:236) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:803) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:714) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-11T21:18:20.843+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(158)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-11T21:18:20.920+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-11T21:18:21.022+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-11T21:18:21.044+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-11T21:18:21.052+05:30  INFO 17328 --- [Quizs-Service] [RMI TCP Connection(154)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
