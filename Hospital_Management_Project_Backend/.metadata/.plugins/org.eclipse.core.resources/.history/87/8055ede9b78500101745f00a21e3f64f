@@ -1,0 +1,5 @@
+package com.knr.hospital.service;
+
+public class DoctorServiceImpl implements DoctorService {
+
+}

@@ -1,0 +1,5 @@
+package com.knr.hospital.controller;
+
+public class BillingController {
+
+}

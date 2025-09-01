@@ -1,0 +1,25 @@
+package com.example.hospital.doctor;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Doctor {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationTYPE.IDENTITY)
+    private Long doctorId;           
+    private String doctorName;  
+    private String specialization;   
+    private String contactNumber;    
+    private String email;           
+    private String department;    
+
+
+}

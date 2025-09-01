@@ -1,0 +1,957 @@
+2025-08-31T11:44:06.154+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 3708 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T11:44:06.159+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T11:44:06.227+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T11:44:06.228+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T11:44:06.232+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T11:44:07.672+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T11:44:07.881+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interface.
+2025-08-31T11:44:08.286+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=56b719c4-e038-39db-ae8f-068c0be52759
+2025-08-31T11:44:09.239+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T11:44:09.333+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T11:44:09.396+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T11:44:09.863+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T11:44:09.912+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T11:44:10.417+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75a6fded
+2025-08-31T11:44:10.419+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T11:44:10.494+05:30  WARN 3708 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T11:44:10.521+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T11:44:11.843+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T11:44:11.966+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T11:44:15.141+05:30  WARN 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T11:44:15.280+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T11:44:15.430+05:30  WARN 3708 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T11:44:15.573+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T11:44:15.613+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T11:44:15.618+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T11:44:15.632+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T11:44:15.633+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T11:44:16.045+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T11:44:16.048+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T11:44:16.051+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T11:44:16.052+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756620856052 with initial instances count: 3
+2025-08-31T11:44:16.075+05:30  INFO 3708 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756620856075, current=UP, previous=STARTING]
+2025-08-31T11:44:16.075+05:30  INFO 3708 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T11:44:16.081+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T11:44:16.082+05:30  WARN 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T11:44:16.102+05:30  INFO 3708 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 11.863 seconds (process running for 13.157)
+2025-08-31T11:44:16.117+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T11:44:16.117+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756620856117, current=DOWN, previous=UP]
+2025-08-31T11:44:16.117+05:30  WARN 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T11:44:16.140+05:30  INFO 3708 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T11:44:16.141+05:30  INFO 3708 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T11:44:16.149+05:30  INFO 3708 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T11:44:17.112+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T11:44:17.118+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T11:44:17.128+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-31T11:44:17.129+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T11:44:20.142+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T11:44:20.165+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T11:44:20.166+05:30  INFO 3708 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T12:00:04.302+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 27028 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T12:00:04.307+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T12:00:04.370+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T12:00:04.370+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T12:00:04.374+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T12:00:05.745+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T12:00:05.957+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 1 JPA repository interface.
+2025-08-31T12:00:06.356+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=56b719c4-e038-39db-ae8f-068c0be52759
+2025-08-31T12:00:07.216+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T12:00:07.322+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T12:00:07.383+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T12:00:07.841+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T12:00:07.892+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T12:00:08.393+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@675c72b6
+2025-08-31T12:00:08.396+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T12:00:08.473+05:30  WARN 27028 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T12:00:08.504+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T12:00:09.823+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T12:00:09.902+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T12:00:13.056+05:30  WARN 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T12:00:13.167+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T12:00:13.338+05:30  WARN 27028 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T12:00:13.483+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T12:00:13.521+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T12:00:13.527+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T12:00:13.540+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T12:00:13.540+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T12:00:13.540+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T12:00:13.540+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T12:00:13.540+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T12:00:13.541+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T12:00:13.541+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T12:00:13.880+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T12:00:13.883+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T12:00:13.886+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T12:00:13.888+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756621813887 with initial instances count: 3
+2025-08-31T12:00:13.907+05:30  INFO 27028 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756621813907, current=UP, previous=STARTING]
+2025-08-31T12:00:13.908+05:30  INFO 27028 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T12:00:13.909+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T12:00:13.911+05:30  WARN 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T12:00:13.929+05:30  INFO 27028 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 11.472 seconds (process running for 12.755)
+2025-08-31T12:00:13.940+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T12:00:13.940+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756621813940, current=DOWN, previous=UP]
+2025-08-31T12:00:13.941+05:30  WARN 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T12:00:13.972+05:30  INFO 27028 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T12:00:13.972+05:30  INFO 27028 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T12:00:13.978+05:30  INFO 27028 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T12:00:14.955+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T12:00:14.959+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T12:00:14.969+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-31T12:00:14.970+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T12:00:17.981+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T12:00:17.990+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T12:00:17.991+05:30  INFO 27028 --- [Billing_Service] [SpringApplicationShutdownHook] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T12:37:08.194+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 15836 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T12:37:08.198+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T12:37:08.263+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T12:37:08.264+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T12:37:08.266+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T12:37:08.268+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-31T12:37:10.024+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T12:37:10.228+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 191 ms. Found 1 JPA repository interface.
+2025-08-31T12:37:10.666+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T12:37:11.898+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T12:37:11.917+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T12:37:11.918+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T12:37:12.004+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T12:37:12.005+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3737 ms
+2025-08-31T12:37:13.219+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T12:37:13.304+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T12:37:13.354+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T12:37:13.763+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T12:37:13.809+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T12:37:14.217+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@594eb8a6
+2025-08-31T12:37:14.220+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T12:37:14.301+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T12:37:14.326+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T12:37:15.592+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T12:37:15.677+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T12:37:15.875+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T12:37:19.120+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T12:37:19.269+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T12:37:19.603+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T12:37:19.653+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T12:37:19.913+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T12:37:19.971+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T12:37:19.987+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T12:37:20.013+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T12:37:20.014+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T12:37:20.014+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T12:37:20.014+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T12:37:20.014+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T12:37:20.015+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T12:37:20.015+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T12:37:20.726+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T12:37:20.730+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T12:37:20.734+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T12:37:20.736+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756624040736 with initial instances count: 5
+2025-08-31T12:37:20.767+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756624040767, current=UP, previous=STARTING]
+2025-08-31T12:37:20.767+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T12:37:20.774+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T12:37:20.775+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T12:37:20.798+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T12:37:20.799+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T12:37:20.839+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T12:37:20.841+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 14.53 seconds (process running for 15.903)
+2025-08-31T12:37:21.360+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(5)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-31T12:37:21.361+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(5)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-31T12:37:21.364+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(5)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-31T12:37:21.798+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T12:37:21.799+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T12:42:20.028+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T12:47:20.064+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T12:52:20.078+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T12:57:20.086+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:02:20.103+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:07:20.111+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:12:20.126+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:44:04.811+05:30  WARN 15836 --- [Billing_Service] [HikariPool-1:housekeeper] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m19s802ms569µs800ns).
+2025-08-31T13:47:34.493+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:52:34.514+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T13:57:34.542+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:02:34.576+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:07:34.590+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:12:34.606+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:17:34.612+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:22:34.626+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:27:34.642+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:32:34.661+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:37:34.681+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:42:34.694+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:47:34.704+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:52:34.723+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T14:57:34.734+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:02:34.760+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:07:34.780+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:12:34.792+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:17:34.809+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:22:34.842+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:27:34.889+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:32:34.931+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:37:34.939+05:30  INFO 15836 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:38:40.221+05:30  INFO 15836 --- [Billing_Service] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-31T15:38:40.342+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T15:38:40.344+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756634920344, current=DOWN, previous=UP]
+2025-08-31T15:38:40.354+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756634920354, current=UP, previous=DOWN]
+2025-08-31T15:38:40.354+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:38:40.501+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:38:40.609+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T15:38:40.688+05:30  INFO 15836 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T15:38:40.936+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:38:41.169+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T15:38:41.226+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-31T15:38:41.341+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T15:38:44.383+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T15:38:44.388+05:30  WARN 15836 --- [Billing_Service] [DiscoveryClient-%d] [                                                 ] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, reject the task
+
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@3a0a8ec0[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@6ab6d7c9[Wrapped task = com.netflix.discovery.DiscoveryClient$HeartbeatThread@2fb444fb]] rejected from java.util.concurrent.ThreadPoolExecutor@56b7e1e4[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 301]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376) ~[na:na]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123) ~[na:na]
+	at com.netflix.discovery.TimedSupervisorTask.run(TimedSupervisorTask.java:63) ~[eureka-client-2.0.4.jar:2.0.4]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-31T15:38:44.434+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T15:38:44.436+05:30  INFO 15836 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T15:38:47.607+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 15836 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T15:38:47.608+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T15:38:47.614+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T15:38:47.614+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T15:38:48.787+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T15:38:48.808+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-08-31T15:38:49.000+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T15:38:49.547+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T15:38:49.552+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T15:38:49.553+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T15:38:49.635+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T15:38:49.635+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2021 ms
+2025-08-31T15:38:50.434+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T15:38:50.440+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T15:38:50.473+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T15:38:50.476+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-31T15:38:50.500+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61ec382d
+2025-08-31T15:38:50.501+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-31T15:38:50.507+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T15:38:50.508+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T15:38:50.613+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T15:38:50.678+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:38:50.879+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T15:38:53.369+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T15:38:53.509+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T15:38:53.676+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T15:38:53.699+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T15:38:53.817+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T15:38:53.826+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T15:38:53.827+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:38:53.827+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T15:38:53.827+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T15:38:53.827+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T15:38:53.827+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T15:38:53.829+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T15:38:53.829+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T15:38:53.829+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T15:38:53.902+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T15:38:53.903+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T15:38:53.905+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T15:38:53.905+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756634933905 with initial instances count: 5
+2025-08-31T15:38:53.910+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756634933910, current=UP, previous=STARTING]
+2025-08-31T15:38:53.910+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:38:53.929+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:38:53.930+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T15:38:53.931+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T15:38:53.936+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T15:38:53.937+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T15:38:53.962+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 8.981 seconds (process running for 10909.035)
+2025-08-31T15:38:53.968+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-31T15:38:54.914+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T15:38:54.914+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T15:41:42.740+05:30  INFO 15836 --- [Billing_Service] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-31T15:41:42.742+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T15:41:42.742+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635102742, current=DOWN, previous=UP]
+2025-08-31T15:41:42.744+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T15:41:42.749+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635102749, current=UP, previous=DOWN]
+2025-08-31T15:41:42.749+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:41:42.759+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:41:42.759+05:30  INFO 15836 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T15:41:42.768+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:41:42.769+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-31T15:41:42.775+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-31T15:41:43.430+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T15:41:46.435+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T15:41:46.456+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T15:41:46.457+05:30  INFO 15836 --- [Billing_Service] [Thread-7] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T15:41:47.840+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 15836 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T15:41:47.840+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T15:41:47.844+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T15:41:47.844+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T15:41:48.575+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T15:41:48.590+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interface.
+2025-08-31T15:41:48.759+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T15:41:49.169+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T15:41:49.173+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T15:41:49.173+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T15:41:49.233+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T15:41:49.233+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
+2025-08-31T15:41:49.957+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T15:41:49.962+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T15:41:49.978+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T15:41:49.979+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-31T15:41:50.000+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@892b4c2
+2025-08-31T15:41:50.001+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-31T15:41:50.004+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T15:41:50.004+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T15:41:50.079+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T15:41:50.099+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:41:50.279+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T15:41:52.546+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T15:41:52.654+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T15:41:52.869+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T15:41:52.897+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T15:41:52.986+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T15:41:52.994+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T15:41:52.994+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:41:52.994+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T15:41:52.994+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T15:41:52.994+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T15:41:52.995+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T15:41:52.995+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T15:41:52.995+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T15:41:52.995+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T15:41:53.061+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T15:41:53.061+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T15:41:53.061+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T15:41:53.062+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756635113062 with initial instances count: 6
+2025-08-31T15:41:53.066+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635113066, current=UP, previous=STARTING]
+2025-08-31T15:41:53.066+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:41:53.085+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T15:41:53.085+05:30  WARN 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T15:41:53.087+05:30  INFO 15836 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:41:53.091+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T15:41:53.092+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T15:41:53.120+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 6.529 seconds (process running for 11088.194)
+2025-08-31T15:41:53.123+05:30  INFO 15836 --- [Billing_Service] [restartedMain] [                                                 ] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-31T15:41:54.071+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T15:41:54.072+05:30  WARN 15836 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T15:41:56.963+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T15:41:56.964+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T15:41:56.965+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635116965, current=DOWN, previous=UP]
+2025-08-31T15:41:56.965+05:30  WARN 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T15:41:56.967+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T15:41:56.978+05:30  INFO 15836 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T15:41:56.986+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:41:56.987+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-31T15:41:56.994+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-31T15:41:57.099+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T15:42:00.110+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T15:42:00.131+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T15:42:00.131+05:30  INFO 15836 --- [Billing_Service] [RMI TCP Connection(178)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T15:42:48.250+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 14272 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T15:42:48.255+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T15:42:48.335+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T15:42:48.336+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T15:42:48.339+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T15:42:48.339+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-31T15:42:50.361+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T15:42:50.638+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 260 ms. Found 1 JPA repository interface.
+2025-08-31T15:42:51.205+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T15:42:52.671+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T15:42:52.696+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T15:42:52.696+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T15:42:52.802+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T15:42:52.803+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4463 ms
+2025-08-31T15:42:54.405+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T15:42:54.536+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T15:42:54.610+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T15:42:55.188+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T15:42:55.248+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T15:42:55.743+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@594eb8a6
+2025-08-31T15:42:55.747+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T15:42:55.880+05:30  WARN 14272 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T15:42:55.920+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T15:42:57.595+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T15:42:57.700+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:42:57.952+05:30  WARN 14272 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T15:43:01.766+05:30  WARN 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T15:43:01.951+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T15:43:02.147+05:30  WARN 14272 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T15:43:02.185+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T15:43:02.480+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T15:43:02.533+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T15:43:02.542+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:43:02.560+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T15:43:02.560+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T15:43:02.560+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T15:43:02.560+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T15:43:02.561+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T15:43:02.561+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T15:43:02.561+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T15:43:03.058+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T15:43:03.061+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T15:43:03.064+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T15:43:03.066+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756635183066 with initial instances count: 5
+2025-08-31T15:43:03.091+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635183091, current=UP, previous=STARTING]
+2025-08-31T15:43:03.092+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:43:03.098+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T15:43:03.099+05:30  WARN 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T15:43:03.123+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T15:43:03.125+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T15:43:03.166+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:43:03.170+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 18.513 seconds (process running for 20.257)
+2025-08-31T15:43:03.838+05:30  INFO 14272 --- [Billing_Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-31T15:43:03.838+05:30  INFO 14272 --- [Billing_Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-31T15:43:03.841+05:30  INFO 14272 --- [Billing_Service] [RMI TCP Connection(7)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-31T15:43:04.163+05:30  WARN 14272 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T15:43:04.164+05:30  WARN 14272 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T15:45:06.419+05:30 ERROR 14272 --- [Billing_Service] [http-nio-8085-exec-1] [                                                 ] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke "com.knr.hospital.repository.BillingRepository.save(Object)" because "this.billingRepository" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.knr.hospital.repository.BillingRepository.save(Object)" because "this.billingRepository" is null
+	at com.knr.hospital.service.BillingServiceImpl.save(BillingServiceImpl.java:21) ~[classes/:na]
+	at com.knr.hospital.controller.BillingController.createBilling(BillingController.java:30) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.44.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.44.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2025-08-31T15:46:38.667+05:30  INFO 14272 --- [Billing_Service] [File Watcher] [                                                 ] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-08-31T15:46:38.671+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T15:46:38.671+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635398671, current=DOWN, previous=UP]
+2025-08-31T15:46:38.676+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T15:46:38.678+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635398678, current=UP, previous=DOWN]
+2025-08-31T15:46:38.678+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:46:38.689+05:30  INFO 14272 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T15:46:38.701+05:30  INFO 14272 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:46:38.709+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:46:38.715+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T15:46:38.727+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-31T15:46:39.163+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-31T15:46:42.167+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-31T15:46:42.219+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - deregister  status: 200
+2025-08-31T15:46:42.219+05:30  INFO 14272 --- [Billing_Service] [Thread-1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-31T15:46:45.267+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 14272 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T15:46:45.267+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T15:46:45.272+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T15:46:45.272+05:30  INFO 14272 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T15:46:57.994+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 6540 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T15:46:58.000+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T15:46:58.074+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T15:46:58.074+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T15:46:58.077+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T15:46:58.078+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-31T15:47:00.034+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T15:47:00.328+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 272 ms. Found 1 JPA repository interface.
+2025-08-31T15:47:00.887+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T15:47:02.353+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T15:47:02.379+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T15:47:02.379+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T15:47:02.479+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T15:47:02.480+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4400 ms
+2025-08-31T15:47:03.973+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T15:47:04.115+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T15:47:04.194+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T15:47:04.759+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T15:47:04.814+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T15:47:05.272+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55539b6a
+2025-08-31T15:47:05.274+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T15:47:05.389+05:30  WARN 6540 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T15:47:05.424+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T15:47:07.016+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T15:47:07.125+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T15:47:07.754+05:30  WARN 6540 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T15:47:10.628+05:30  WARN 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T15:47:10.762+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T15:47:10.929+05:30  WARN 6540 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T15:47:10.960+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T15:47:11.154+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T15:47:11.195+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T15:47:11.201+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:47:11.216+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T15:47:11.217+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T15:47:11.618+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T15:47:11.621+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T15:47:11.624+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T15:47:11.626+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756635431626 with initial instances count: 5
+2025-08-31T15:47:11.647+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756635431646, current=UP, previous=STARTING]
+2025-08-31T15:47:11.647+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T15:47:11.649+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T15:47:11.651+05:30  WARN 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T15:47:11.672+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T15:47:11.673+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T15:47:11.706+05:30  INFO 6540 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 16.32 seconds (process running for 17.964)
+2025-08-31T15:47:11.712+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T15:47:12.075+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-31T15:47:12.075+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-31T15:47:12.078+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(9)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-31T15:47:12.699+05:30  WARN 6540 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T15:47:12.699+05:30  WARN 6540 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T15:48:57.116+05:30  WARN 6540 --- [Billing_Service] [http-nio-8085-exec-5] [68b42191ac5d9c21d8de3cc923248cd0-d8de3cc923248cd0] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-08-31T15:49:02.550+05:30  WARN 6540 --- [Billing_Service] [http-nio-8085-exec-6] [68b421964331a0e985a674dbc9593b19-85a674dbc9593b19] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-08-31T15:52:11.228+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T15:57:11.229+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:02:11.233+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:07:11.246+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:12:11.262+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:17:11.322+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:22:11.338+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:27:11.345+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:32:11.396+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:37:11.454+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:42:11.467+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:47:11.471+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:52:11.479+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T16:57:11.482+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:02:11.495+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:07:11.525+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:12:11.543+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:17:11.573+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:22:11.606+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:27:11.619+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:32:11.622+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:37:11.635+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:42:11.651+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:47:11.673+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:52:11.685+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T17:57:11.702+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:02:11.717+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:07:11.731+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:12:11.749+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:17:11.766+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:22:11.782+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:27:11.819+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:32:11.834+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:37:11.869+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:42:11.925+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:47:11.987+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:52:12.042+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T18:57:12.083+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:02:12.157+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:07:12.304+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:12:12.355+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:17:12.401+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:22:12.408+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:27:12.414+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:32:12.446+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:37:12.465+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:42:12.520+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:47:12.583+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:52:12.635+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T19:57:12.653+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:02:12.701+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:07:12.732+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:12:12.766+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:17:12.768+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:22:12.786+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:27:12.821+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:32:12.852+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:37:12.874+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:42:12.898+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:47:12.911+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:52:12.921+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T20:57:12.931+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:02:12.976+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:07:12.998+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:12:13.015+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:17:13.026+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:22:13.048+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:27:13.090+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:32:13.114+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:37:13.167+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:42:13.199+05:30  INFO 6540 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:46:05.242+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(402)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.247+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(399)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.235+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(403)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.368+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(402)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T21:46:05.378+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(404)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.378+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(402)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756656965377, current=DOWN, previous=UP]
+2025-08-31T21:46:05.387+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756656965387, current=UP, previous=DOWN]
+2025-08-31T21:46:05.389+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T21:46:05.514+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(405)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.546+05:30  INFO 6540 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T21:46:05.611+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(402)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T21:46:05.689+05:30  INFO 6540 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T21:46:05.719+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(406)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:46:05.839+05:30  INFO 6540 --- [Billing_Service] [RMI TCP Connection(402)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T21:50:05.241+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Starting BillingServiceApplication using Java 21.0.7 with PID 34248 (C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service\target\classes started by 91798 in C:\Users\91798\OneDrive\Documents\Wipro_Capstone_Project\Hospital_Management_Project_Backend\Billing_Service)
+2025-08-31T21:50:05.245+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-08-31T21:50:05.304+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9092
+2025-08-31T21:50:05.304+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Billing_Service, profiles=[default], label=null, version=2a306f42ab3b9e04f501f001d92459029558860a, state=
+2025-08-31T21:50:05.307+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-31T21:50:05.307+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-31T21:50:07.079+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-31T21:50:07.286+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 194 ms. Found 1 JPA repository interface.
+2025-08-31T21:50:07.745+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b39b5323-adf0-3bd1-8b7c-b21ac454b938
+2025-08-31T21:50:08.915+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8085 (http)
+2025-08-31T21:50:08.934+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-31T21:50:08.934+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-08-31T21:50:09.017+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-31T21:50:09.017+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3709 ms
+2025-08-31T21:50:10.269+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-31T21:50:10.356+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-08-31T21:50:10.411+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-31T21:50:10.853+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-31T21:50:10.901+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-31T21:50:11.306+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5313d64e
+2025-08-31T21:50:11.309+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-31T21:50:11.384+05:30  WARN 34248 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-31T21:50:11.410+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-31T21:50:12.751+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-31T21:50:12.830+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T21:50:13.399+05:30  WARN 34248 --- [Billing_Service] [restartedMain] [                                                 ] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-31T21:50:16.138+05:30  WARN 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-31T21:50:16.258+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-31T21:50:16.427+05:30  WARN 34248 --- [Billing_Service] [restartedMain] [                                                 ] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-31T21:50:16.458+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-08-31T21:50:16.650+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-31T21:50:16.694+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-31T21:50:16.702+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:50:16.718+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-31T21:50:16.719+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-31T21:50:17.127+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-31T21:50:17.130+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-31T21:50:17.132+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-31T21:50:17.134+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1756657217134 with initial instances count: 7
+2025-08-31T21:50:17.157+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756657217157, current=UP, previous=STARTING]
+2025-08-31T21:50:17.157+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T21:50:17.164+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BILLING_SERVICE with eureka with status UP
+2025-08-31T21:50:17.165+05:30  WARN 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-08-31T21:50:17.185+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8085 (http) with context path '/'
+2025-08-31T21:50:17.186+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8085
+2025-08-31T21:50:17.216+05:30  INFO 34248 --- [Billing_Service] [restartedMain] [                                                 ] c.k.hospital.BillingServiceApplication   : Started BillingServiceApplication in 13.831 seconds (process running for 15.164)
+2025-08-31T21:50:17.222+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T21:50:17.841+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-31T21:50:17.842+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-31T21:50:17.844+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(10)-127.0.0.1] [                                                 ] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-08-31T21:50:18.194+05:30  WARN 34248 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2025-08-31T21:50:18.194+05:30  WARN 34248 --- [Billing_Service] [AsyncReporter{ZipkinHttpClientSender{http://localhost:9411/api/v2/spans}}] [                                                 ] z.r.i.AsyncReporter$BoundedAsyncReporter : Dropped 2 spans due to ConnectException()
+
+java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.HttpClientImpl.send(HttpClientImpl.java:952) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.HttpClientFacade.send(HttpClientFacade.java:133) ~[java.net.http:na]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.ZipkinHttpClientSender.postSpans(ZipkinHttpClientSender.java:60) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:69) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at org.springframework.boot.actuate.autoconfigure.tracing.zipkin.HttpSender.postSpans(HttpSender.java:41) ~[spring-boot-actuator-autoconfigure-3.5.5.jar:3.5.5]
+	at zipkin2.reporter.BaseHttpSender.send(BaseHttpSender.java:123) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:266) ~[zipkin-reporter-3.5.1.jar:na]
+	at zipkin2.reporter.internal.AsyncReporter$Flusher.run(AsyncReporter.java:352) ~[zipkin-reporter-3.5.1.jar:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.net.ConnectException: null
+	at java.net.http/jdk.internal.net.http.common.Utils.toConnectException(Utils.java:1041) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:227) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.checkRetryConnect(PlainHttpConnection.java:280) ~[java.net.http:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$2(PlainHttpConnection.java:238) ~[java.net.http:na]
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1773) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	... 1 common frames omitted
+Caused by: java.nio.channels.ClosedChannelException: null
+	at java.base/sun.nio.ch.SocketChannelImpl.ensureOpen(SocketChannelImpl.java:202) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.beginConnect(SocketChannelImpl.java:786) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:874) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.lambda$connectAsync$1(PlainHttpConnection.java:210) ~[java.net.http:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571) ~[na:na]
+	at java.net.http/jdk.internal.net.http.PlainHttpConnection.connectAsync(PlainHttpConnection.java:212) ~[java.net.http:na]
+	... 9 common frames omitted
+
+2025-08-31T21:55:16.735+05:30  INFO 34248 --- [Billing_Service] [AsyncResolver-bootstrap-executor-%d] [                                                 ] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-31T21:57:47.606+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:57:47.619+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application BILLING_SERVICE with eureka with status DOWN
+2025-08-31T21:57:47.619+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756657667619, current=DOWN, previous=UP]
+2025-08-31T21:57:47.624+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1756657667624, current=UP, previous=DOWN]
+2025-08-31T21:57:47.624+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085: registering service...
+2025-08-31T21:57:47.648+05:30  INFO 34248 --- [Billing_Service] [DiscoveryClient-InstanceInfoReplicator-%d] [                                                 ] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BILLING_SERVICE/KNRROHIT:Billing_Service:8085 - registration status: 204
+2025-08-31T21:57:47.650+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-31T21:57:47.669+05:30  INFO 34248 --- [Billing_Service] [tomcat-shutdown] [                                                 ] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-31T21:57:47.684+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(20)-127.0.0.1] [                                                 ] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-31T21:57:47.705+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-31T21:57:47.728+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-31T21:57:47.751+05:30  INFO 34248 --- [Billing_Service] [RMI TCP Connection(19)-127.0.0.1] [                                                 ] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

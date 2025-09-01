@@ -1,0 +1,52 @@
+package com.knr.hospital.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.knr.hospital.entity.Billing;
+import com.knr.hospital.service.BillingService;
+
+import jakarta.validation.Valid;
+
+@RestController
+@RequestMapping("/api/billing")
+public class BillingController {
+	
+	@Autowired
+	private BillingService billingService;
+	
+	@PostMapping
+	private Billing createBilling(@Valid @RequestBody Billing billing) {
+		return billingService.save(billing);
+	}
+	
+	@GetMapping("/allBillings")
+	private Page<Billing> getAllBillings(@RequestParam int page , @RequestParam int size){
+		return billingService.getAllBillings(page,size);
+	}
+	
+	@GetMapping("/getBilling/{billingId}")
+	private Billing getBillingById(@PathVariable Integer billingId) {
+		return billingService.getBillingById(billingId);
+	}
+	
+	@PatchMapping("/update/{billingId}")
+	private Billing updateBillingById(@PathVariable Integer billingId,@Valid @RequestBody Billing billing) {
+		return billingService.updateBillingById(billingId,billing);
+	}
+	
+	@DeleteMapping("/delete/{billingId}")
+	private ResponseEntity<?> deleteBillingById(@PathVariable Integer billingId){
+		return billingService.deleteBillingById(billingId);
+	}
+}

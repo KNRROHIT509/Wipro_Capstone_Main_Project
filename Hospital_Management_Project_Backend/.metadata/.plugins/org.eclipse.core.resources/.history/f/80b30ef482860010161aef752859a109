@@ -1,0 +1,87 @@
+package com.knr.hospital.config;
+
+import java.io.IOException;
+import java.util.List;
+import java.util.stream.Collectors;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.NonNull;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.knr.hospital.services.jwt.UserService;
+import com.knr.hospital.utils.JwtUtil;
+
+import org.apache.commons.lang3.StringUtils;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j; // For logging best practices
+
+@Component
+@AllArgsConstructor
+@Slf4j // Added for AOP-like logging of auth attempts
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+	@Autowired
+    private final JwtUtil jwtUtil;
+    // Uncomment and use if you have a UserService for loading full user details/authorities
+    @Autowired
+    private final UserService userService;
+
+    @Override
+    protected void doFilterInternal(
+            @NonNull HttpServletRequest request, 
+            @NonNull HttpServletResponse response, 
+            @NonNull FilterChain filterChain
+    ) throws ServletException, IOException {
+
+        final String authHeader = request.getHeader("Authorization");
+        final String jwt;
+        final String userEmail;
+
+        if (StringUtils.isEmpty(authHeader) || !StringUtils.startsWith(authHeader, "Bearer ")) {
+            log.debug("No valid Authorization header found for request: {}", request.getRequestURI());
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+        jwt = authHeader.substring(7);
+
+        userEmail = jwtUtil.extractUsername(jwt); // Updated to match JwtUtil method name
+        String role = jwtUtil.extractRole(jwt); // Using extractRole for consistency with gateway
+
+        if (StringUtils.isNotEmpty(userEmail) && SecurityContextHolder.getContext().getAuthentication() == null) {
+            if (jwtUtil.validateToken(jwt)) { // Using validateToken for consistency
+                SecurityContext context = SecurityContextHolder.createEmptyContext();
+
+                // Set authority from token role - prefix with "ROLE_" for Spring Security convention
+                // Adjust based on your UserRole enum (e.g., ROLE_DOCTOR, ROLE_PATIENT, ROLE_ADMIN)
+                SimpleGrantedAuthority authority = new SimpleGrantedAuthority("ROLE_" + role.toUpperCase());
+
+                // If roles are a list in claims, handle as list (for flexibility in hospital system)
+                // Example: List<String> roles = jwtUtil.extractClaim(jwt, claims -> claims.get("roles", List.class));
+                // List<SimpleGrantedAuthority> authorities = roles.stream().map(r -> new SimpleGrantedAuthority("ROLE_" + r)).collect(Collectors.toList());
+
+                UsernamePasswordAuthenticationToken authToken =
+                        new UsernamePasswordAuthenticationToken(userEmail, null, List.of(authority));
+
+                authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                context.setAuthentication(authToken);
+                SecurityContextHolder.setContext(context);
+
+                log.info("Successful JWT authentication for user: {} with role: {}", userEmail, role); // Audit logging
+            } else {
+                log.warn("Invalid JWT token for user: {}", userEmail); // Logging for auditing
+            }
+        }
+
+        filterChain.doFilter(request, response);
+    }
+}

@@ -1,0 +1,16 @@
+package com.knr.hospital.dto;
+
+
+import com.knr.hospital.enums.UserRole;
+
+import lombok.Data;
+
+@Data
+public class AuthenticationResponse {
+	
+	private String jwt;
+	private Long userId;
+	private UserRole userRole;
+	//private String profession; 
+
+}

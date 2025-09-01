@@ -1,0 +1,24 @@
+package com.knr.hospital.doctor;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Doctor {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationTYPE.IDENTITY)
+    private Long doctorId;           
+    private String doctorName;  
+    private String specialization;   
+    private String contactNumber;    
+    private String email;           
+    private String department;    
+
+
+}

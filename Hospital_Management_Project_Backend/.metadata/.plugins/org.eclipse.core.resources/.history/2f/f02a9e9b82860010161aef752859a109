@@ -1,0 +1,69 @@
+package com.knr.hospital.config;
+
+import org.springframework.boot.web.reactive.error.ErrorAttributes;
+import org.springframework.cloud.gateway.support.NotFoundException;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.reactive.function.server.ServerResponse;
+import org.springframework.web.server.ServerWebExchange;
+import reactor.core.publisher.Mono;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Configuration
+public class GlobalErrorHandler {
+
+    @Bean
+    public ErrorAttributes errorAttributes() {
+        return new CustomErrorAttributes();
+    }
+
+    static class CustomErrorAttributes implements ErrorAttributes {
+
+        public Map<String, Object> getErrorAttributes(ServerWebExchange request, boolean includeStackTrace) {
+            Throwable error = getError(request);
+            Map<String, Object> errorAttributes = new HashMap<>();
+            errorAttributes.put("message", error.getMessage());
+            errorAttributes.put("path", request.getRequest().getPath().value());
+            if (includeStackTrace) {
+                errorAttributes.put("stackTrace", java.util.Arrays.toString(error.getStackTrace()));
+            }
+            return errorAttributes;
+        }
+
+        public Throwable getError(ServerWebExchange request) {
+            return (Throwable) request.getAttribute("org.springframework.boot.web.reactive.error.ErrorAttributes.ERROR");
+        }
+    }
+
+    @Component
+    @Order(-2) // High priority
+    public static class GatewayExceptionHandler {
+
+        @ExceptionHandler(NotFoundException.class)
+        public Mono<ServerResponse> handleNotFound(NotFoundException ex, ServerWebExchange exchange) {
+            return buildErrorResponse(HttpStatus.NOT_FOUND, "Service not found: " + ex.getMessage());
+        }
+
+        @ExceptionHandler(Exception.class)
+        public Mono<ServerResponse> handleGeneralException(Exception ex, ServerWebExchange exchange) {
+            System.err.println("Unhandled error: " + ex.getMessage());
+            return buildErrorResponse(HttpStatus.INTERNAL_SERVER_ERROR, "Internal error: " + ex.getMessage());
+        }
+
+        private Mono<ServerResponse> buildErrorResponse(HttpStatus status, String message) {
+            Map<String, String> error = new HashMap<>();
+            error.put("error", message);
+            error.put("status", String.valueOf(status.value()));
+            return ServerResponse.status(status)
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .bodyValue(error); // Serializable map
+        }
+    }
+}

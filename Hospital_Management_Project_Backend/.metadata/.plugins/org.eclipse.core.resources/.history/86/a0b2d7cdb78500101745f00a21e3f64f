@@ -1,0 +1,15 @@
+package com.knr.hospital.service;
+
+import org.springframework.data.domain.Page;
+
+import com.knr.hospital.entity.Doctor;
+
+import jakarta.validation.Valid;
+
+public interface DoctorService {
+
+	Doctor save(@Valid Doctor doctor);
+
+	Page<Doctor> getAllDoctors(int page, int size);
+
+}

@@ -1,0 +1,42 @@
+package com.knr.hospital.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+
+import com.knr.hospital.entity.Patient;
+import com.knr.hospital.service.PatientService;
+
+import jakarta.validation.Valid;
+
+@RestController
+public class PatientController {
+	
+	@Autowired
+	private PatientService patientService;
+	
+	@PostMapping
+	private Patient createDoctor(@Valid @RequestBody Patient patient) {
+		return patientService.save(patient);
+	}
+	
+	@GetMapping("/allDoctors")
+	private Page<Patient> getAllDoctors(@RequestParam int page , @RequestParam int size){
+		return patientService.getAllPatients(page,size);
+	}
+	
+	@GetMapping("/getDoctor/{doctorId}")
+	private Patient getDoctorById(@PathVariable Integer patientId) {
+		return patientService.getPatientById(doctorId);
+	}
+	
+	@PatchMapping("/update/{doctorId}")
+	private Patient updatePatientById(@PathVariable Integer patientId, @RequestBody Patient patient) {
+		return patientService.updatePatientById(doctorId,doctor);
+	}
+	
+	@DeleteMapping("/delete/{doctorId}")
+	private ResponseEntity<?> deletePatientById(@PathVariable Integer patientId){
+		return patientService.deletePatientById(doctorId);
+	}
+
+}

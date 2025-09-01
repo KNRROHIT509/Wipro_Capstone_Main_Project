@@ -1,0 +1,11 @@
+package com.knr.hospital.service;
+
+import com.knr.hospital.entity.Doctor;
+
+import jakarta.validation.Valid;
+
+public interface DoctorService {
+
+	Doctor save(@Valid Doctor doctor);
+
+}

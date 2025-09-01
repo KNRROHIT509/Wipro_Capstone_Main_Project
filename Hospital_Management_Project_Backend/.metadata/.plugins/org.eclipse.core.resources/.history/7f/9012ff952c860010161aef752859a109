@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "management.health.circuitbreakers.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'management.health.circuitbreakers.enabled'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.register-health-indicator",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.register-health-indicator'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.sliding-window-size",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.sliding-window-size'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.minimum-number-of-calls",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.minimum-number-of-calls'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.permitted-number-of-calls-in-half-open-state",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.permitted-number-of-calls-in-half-open-state'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.event-consumer-buffer-size",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.event-consumer-buffer-size'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.automatic-transition-from-open-to-half-open-enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.automatic-transition-from-open-to-half-open-enabled'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.wait-duration-in-open-state",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.wait-duration-in-open-state'"
+  },
+  {
+    "name": "resilience4j.circuitbreaker.configs.default.failure-rate-threshold",
+    "type": "java.lang.String",
+    "description": "A description for 'resilience4j.circuitbreaker.configs.default.failure-rate-threshold'"
+  },
+  {
+    "name": "management.zipkin.tracing.enabled",
+    "type": "java.lang.String",
+    "description": "A description for 'management.zipkin.tracing.enabled'"
+  }
+]}

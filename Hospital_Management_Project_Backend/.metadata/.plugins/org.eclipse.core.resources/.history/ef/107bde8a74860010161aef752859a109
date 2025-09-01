@@ -1,0 +1,5 @@
+package com.knr.hospital.config;
+
+public class GlobalErrorHandler {
+
+}

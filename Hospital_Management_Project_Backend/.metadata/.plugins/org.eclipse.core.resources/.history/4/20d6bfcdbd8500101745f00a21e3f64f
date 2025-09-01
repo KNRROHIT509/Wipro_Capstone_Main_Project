@@ -1,0 +1,22 @@
+package com.knr.hospital.service;
+
+import org.springframework.data.domain.Page;
+
+
+import com.knr.hospital.entity.Patient;
+
+import jakarta.validation.Valid;
+
+public interface PatientService {
+
+	Patient save(@Valid Patient patient);
+
+	Page<Patient> getAllPatients(int page, int size);
+
+	ResponseEntity<?> deletePatientById(Integer patientId);
+
+	Patient getPatientById(Integer patientId);
+
+	Patient updatePatientById(Integer patientId, Patient patient);
+
+}

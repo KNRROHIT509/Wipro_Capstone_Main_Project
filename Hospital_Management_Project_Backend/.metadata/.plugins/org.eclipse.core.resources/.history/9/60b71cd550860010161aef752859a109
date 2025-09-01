@@ -1,0 +1,44 @@
+package com.knr.hospital.entity;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Medical_Record {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer recordId;
+	
+	@NotBlank(message="Patient ID is mandatory")
+	private Integer patientId;
+	
+	@NotBlank(message="Description about medical record is mandatory")
+	private String description;
+	
+	@NotBlank(message="Doctor ID is mandatory")
+	private Integer doctorId;
+	
+	@NotBlank(message="When patient is treated by doctor is required")
+	private LocalDateTime treatedAt;
+	
+	@NotEmpty(message="Medicines list is mandatory")
+	private List<String> medicines;
+	
+	private LocalDate revisit;
+
+}

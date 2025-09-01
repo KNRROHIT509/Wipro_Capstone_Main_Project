@@ -1,0 +1,46 @@
+package com.knr.hospital.config;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.gateway.route.RouteLocator;
+import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import com.knr.hospital.filter.JwtAuthenticationFilter;
+
+@Configuration
+public class GatewayConfig {
+
+    @Autowired
+    private JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    @Bean
+    public RouteLocator routes(RouteLocatorBuilder builder) {
+        return builder.routes()
+        	 // User Auth Service
+            .route("user-authentication-service-route", r -> r.path("/api/auth/**")
+                    .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                    .uri("lb://USER-AUTHENTICATION-SERVICE"))
+            // Doctor Service
+            .route("doctor-service-route", r -> r.path("/api/doctor/**")
+                .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                .uri("lb://Doctor_Service"))
+            // Patient Service
+            .route("patient-service-route", r -> r.path("/api/patients/**")
+                .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                .uri("lb://Patient_Service"))
+            // Appointment Service
+            .route("appointment-service-route", r -> r.path("/api/appointments/**")
+                .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                .uri("lb://Appointment_Service"))
+            // Medical Record Service
+            .route("medical-record-service-route", r -> r.path("/api/medicalrecords/**")
+                .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                .uri("lb://Medical_Record_Service"))
+            // Billing Service
+            .route("billing-service-route", r -> r.path("/api/billing/**")
+                .filters(f -> f.filter(jwtAuthenticationFilter.apply(new JwtAuthenticationFilter.Config())))
+                .uri("lb://Billing_Service"))
+            .build();
+    }
+}

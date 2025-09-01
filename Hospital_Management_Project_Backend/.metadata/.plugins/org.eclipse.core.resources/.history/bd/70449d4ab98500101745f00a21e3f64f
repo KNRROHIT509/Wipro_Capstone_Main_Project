@@ -1,0 +1,41 @@
+package com.knr.hospital.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.knr.hospital.entity.Doctor;
+import com.knr.hospital.service.DoctorService;
+
+import jakarta.validation.Valid;
+
+@RestController
+public class DoctorController {
+	
+	@Autowired
+	private DoctorService doctorService;
+	
+	private Doctor createDoctor(@Valid @RequestBody Doctor doctor) {
+		return doctorService.save(doctor);
+	}
+	
+	private Page<Doctor> getAllDoctors(@RequestParam int page , @RequestParam int size){
+		return doctorService.getAllDoctors(page,size);
+	}
+	
+	private Doctor getDoctorById(@PathVariable Integer doctorId) {
+		return doctorService.getDoctorById(doctorId);
+	}
+	
+	private Doctor updateDoctorById(@PathVariable Integer doctorId, @RequestBody Doctor doctor) {
+		return doctorService.updateDoctorById(doctorId,doctor);
+	}
+	
+	private ResponseEntity<?> deleteDoctorById(@PathVariable Integer doctorId){
+		return doctorService.deleteDoctorById(doctorId);
+	}
+}

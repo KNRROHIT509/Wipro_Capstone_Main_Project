@@ -1,0 +1,56 @@
+package com.knr.hospital.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.knr.hospital.entity.Doctor;
+import com.knr.hospital.repository.DoctorRepository;
+
+import jakarta.validation.Valid;
+
+@Service
+public class DoctorServiceImpl implements DoctorService {
+	
+	@Autowired
+	private DoctorRepository doctorRepository;
+
+	@Override
+	public Doctor save(@Valid Doctor doctor) {
+		// TODO Auto-generated method stub
+		return doctorRepository.save(doctor);
+	}
+
+	@Override
+	public Page<Doctor> getAllDoctors(int page, int size) {
+		// TODO Auto-generated method stub
+		return doctorRepository.findAll(PageRequest.of(page, size));
+	}
+
+	@Override
+	public Doctor getDoctorById(Integer doctorId) {
+		// TODO Auto-generated method stub
+		return doctorRepository.findById(doctorId).orElseThrow(()->new RuntimeException("Doctor ID with "+doctorId+" not found"));
+	}
+
+	@Override
+	public Doctor updateDoctorById(Integer doctorId, Doctor doctor) {
+		// TODO Auto-generated method stub
+		Doctor updated=doctorRepository.findById(doctorId).orElseThrow(()->new RuntimeException("Doctor ID with "+doctorId+" not found"));
+		updated.setDoctorName(doctor.getDoctorName());
+		updated.setSpecialization(doctor.getSpecialization());
+		updated.setEmail(doctor.getEmail());
+		updated.setContactNumber(doctor.getContactNumber());
+		return doctorRepository.save(updated);
+	}
+
+	@Override
+	public ResponseEntity<?> deleteDoctorById(Integer doctorId) {
+		// TODO Auto-generated method stub
+		doctorRepository.deleteById(doctorId);
+		return ResponseEntity.ok("Doctor ID with "+doctorId+" deleted successfully");
+	}
+
+}

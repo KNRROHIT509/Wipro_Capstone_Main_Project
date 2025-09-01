@@ -1,0 +1,5 @@
+package com.knr.hospital.service;
+
+public class Medical_Record_ServiceImpl implements Medical_Record_Service {
+
+}

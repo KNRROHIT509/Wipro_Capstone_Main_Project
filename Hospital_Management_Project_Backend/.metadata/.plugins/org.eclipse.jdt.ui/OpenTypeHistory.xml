@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=Doctor_Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.knr.hospital.service{DoctorService.java[DoctorService" modifiers="513" timestamp="1756568492748"/>
+    <typeInfo handle="=Appointment_Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.knr.hospital.service{AppointmentService.java[AppointmentService" modifiers="513" timestamp="1756614592409"/>
+    <typeInfo handle="=Billing_Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.knr.hospital.service{BillingService.java[BillingService" modifiers="513" timestamp="1756615964886"/>
+    <typeInfo handle="=Doctor_Service/C:\/Users\/91798\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/3.5.3\/spring-data-jpa-3.5.3.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/3.5.3=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1755857174997"/>
+    <typeInfo handle="=Medical_Record_Service/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.knr.hospital.service{Medical_Record_Service.java[Medical_Record_Service" modifiers="513" timestamp="1756618053442"/>
+    <typeInfo handle="=Medical_Record_Service/C:\/Users\/91798\/.p2\/pool\/plugins\/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.7.v20250502-0916\/jre\/lib\/jrt-fs.jar`jdk.xml.dom=/javadoc_location=/https:\/\/docs.oracle.com\/en\/java\/javase\/21\/docs\/api\/=/=/maven.pomderived=/true=/&lt;org.w3c.dom.stylesheets(MediaList.class[MediaList" modifiers="1537" timestamp="1746157938000"/>
+</typeInfoHistroy>

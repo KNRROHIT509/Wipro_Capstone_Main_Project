@@ -1,0 +1,14 @@
+package com.knr.hospital.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.knr.hospital.repository.DoctorRepository;
+
+@Service
+public class DoctorServiceImpl implements DoctorService {
+	
+	@Autowired
+	private DoctorRepository doctorRepository;
+
+}
