@@ -1,0 +1,60 @@
+<div class="container" *ngIf="patient; else loadingOrError">
+  <h2 class="title">Patient Profile</h2>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <div class="avatar">{{ patient?.name }}</div>
+      <h3>{{ patient?.name }}</h3>
+      <p class="email">{{ patient?.email }}</p>
+    </div>
+
+    <div class="profile-details">
+      <div class="detail-row">
+        <span class="label">Patient ID:</span>
+        <span class="value">{{ patient?.id }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">Address:</span>
+        <span class="value">{{ patient?.address }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">Gender:</span>
+        <span class="value">{{ patient?.gender }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">DOB:</span>
+        <span class="value">{{ patient?.dob | date:'longDate' }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">Weight:</span>
+        <span class="value">{{ patient?.weight }} kg</span>
+      </div>
+      <div class="detail-row">
+        <span class="label">Height:</span>
+        <span class="value">{{ patient?.height }} cm</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Medical Records Section -->
+  <h3 class="records-title">Medical Records</h3>
+
+  <div class="records-container">
+    <div class="record-card" *ngFor="let record of medicalRecord">
+      <p><strong>ID:</strong> {{ record?.id }}</p>
+      <p><strong>Description:</strong> {{ record?.description }}</p>
+      <p><strong>Doctor Name:</strong> {{ record?.doctorName }}</p>
+      <p><strong>Visited Date:</strong> {{ record?.visitedDate | date:'mediumDate' }}</p>
+      <p><strong>Medicines:</strong> {{ record?.medicines }}</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #noRecords>
+  <p class="no-records">No medical records found for this patient.</p>
+</ng-template>
+
+<ng-template #loadingOrError>
+  <div class="loading">Loading patient details...</div>
+  <div *ngIf="error" class="error">{{ error }}</div>
+</ng-template>

@@ -1,0 +1,90 @@
+<app-home-component></app-home-component>
+
+<div class="login-wrapper">
+  <!-- Left Side - Image -->
+  <div class="login-image">
+    <img 
+    src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Hospital illustration" 
+    />
+  </div>
+  <!-- Right Side - Login Form -->
+  <div class="login-container">
+    <mat-card class="login-card">
+      <mat-card-title class="login-title">Welcome Back 👋</mat-card-title>
+      <mat-card-subtitle class="login-subtitle">Login to continue to Hospital Application</mat-card-subtitle>
+      
+      <mat-card-content>
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+          <!-- Email -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Email</mat-label>
+            <input 
+              matInput 
+              type="email" 
+              placeholder="Enter your email" 
+              formControlName="email" 
+              required 
+            />
+            <mat-error *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+              Please enter a valid email
+            </mat-error>
+          </mat-form-field>
+
+          <!-- Password -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Password</mat-label>
+            <input 
+              matInput 
+              [type]="hidePassword ? 'password' : 'text'" 
+              placeholder="Enter your password"
+              formControlName="password" 
+              required 
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              type="button"
+              (click)="togglePasswordVisibility()"
+            >
+              <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+            </button>
+            <mat-error *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+              Password is required
+            </mat-error>
+          </mat-form-field>
+
+          <!-- User Role Dropdown -->
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>User Role</mat-label>
+            <mat-select formControlName="role" formControlName="userRole" required>
+              <mat-option value="ADMIN">Admin</mat-option>
+              <mat-option value="DOCTOR">Doctor</mat-option>
+              <mat-option value="PATIENT">Patient</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <!-- Login Button -->
+          <button 
+            type="submit" 
+            mat-flat-button  
+            class="login-btn" 
+            [disabled]="loginForm.invalid"
+          >
+            Login
+          </button>
+
+          <!-- Extra Links -->
+          <div class="login-links">
+            <a routerLink="/forgot-password">Forgot Password?</a>
+            <a routerLink="/signup">Create Account</a>
+          </div>
+
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<br>
+<app-footer></app-footer>

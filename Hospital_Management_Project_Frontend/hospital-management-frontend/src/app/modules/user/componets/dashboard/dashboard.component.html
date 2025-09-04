@@ -1,0 +1,109 @@
+<app-home-component></app-home-component>
+<app-complete-profile-from></app-complete-profile-from>
+
+<div class="home-container">
+
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-text">
+      <h1>We help people to get appointment in online</h1>
+      <p>
+        Serenity Care Hospital is a multi-specialty healthcare institution dedicated
+        to providing compassionate treatment and advanced medical solutions. We offer
+        patients high-quality care with modern facilities, skilled doctors, and
+        round-the-clock support to ensure comfort and safety.
+      </p>
+      <button mat-raised-button color="primary">Tour</button>
+    </div>
+    <div class="hero-image">
+      <!-- Replace with your 3D-style illustrations -->
+      <img src="https://thumbs.dreamstime.com/z/doctor-kids-playing-to-be-doctors-33458611.jpg?ct=jpeg"
+        alt="Child Doctor">
+    </div>
+  </div>
+
+  <!-- Biography Section -->
+  <div class="biography-section">
+    <div class="bio-image">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/005/317/549/non_2x/doctors-and-patients-cartoon-in-front-the-hospital-vector.jpg"
+        alt="Lab Illustration">
+    </div>
+    <div class="bio-text">
+      <h2>Who We Are</h2>
+      <p>
+        Our Hospital Dashboard provides a comprehensive solution for managing patient
+        information, appointments, and medical records in one centralized system. It
+        enables doctors, nurses, and administrators to access real-time data,
+        streamlining communication and decision-making across departments.
+      </p>
+      <p>
+        With features like appointment tracking, patient history, billing, and
+        analytics, the dashboard enhances efficiency, reduces manual errors, and
+        improves the overall patient care experience.
+      </p>
+
+      <p>It’s 2019: time to sink or swim.</p>
+      <p>We are your Social Media Marketing Agency.</p>
+      <button mat-raised-button color="primary">See More</button>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="services-section">
+    <section class="services-section">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <img src="service1.jpg" alt="Service 1">
+          <h3>Service 1</h3>
+          <p>Short description of service 1</p>
+        </div>
+        <div class="service-card">
+          <img src="service2.jpg" alt="Service 2">
+          <h3>Service 2</h3>
+          <p>Short description of service 2</p>
+        </div>
+        <div class="service-card">
+          <img src="service3.jpg" alt="Service 3">
+          <h3>Service 3</h3>
+          <p>Short description of service 3</p>
+        </div>
+        <div class="service-card">
+          <img src="service4.jpg" alt="Service 4">
+          <h3>Service 4</h3>
+          <p>Short description of service 4</p>
+        </div>
+        <div class="service-card">
+          <img src="service5.jpg" alt="Service 5">
+          <h3>Service 5</h3>
+          <p>Short description of service 5</p>
+        </div>
+        <div class="service-card">
+          <img src="service6.jpg" alt="Service 6">
+          <h3>Service 6</h3>
+          <p>Short description of service 6</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- doctors.component.html -->
+  <div class="doctors-section">
+    <h2>Our Doctors</h2>
+    <div class="doctors-grid">
+      <mat-card *ngFor="let doctor of doctors" class="doctor-card">
+        <img mat-card-image [src]="doctor.image" alt="{{doctor.name}}">
+        <mat-card-content>
+          <h3>{{doctor.name}}</h3>
+          <p>{{doctor.specialty}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+
+</div>
+
+<app-footer></app-footer>
